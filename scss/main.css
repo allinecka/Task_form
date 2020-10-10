@@ -1,0 +1,195 @@
+/*elements*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  font-size: 20px;
+  margin: 40px;
+  background: #DCDCDC;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+p {
+  width: 100%;
+  font-size: 20px;
+}
+
+main {
+  position: relative;
+  padding: 20px 40px 0 40px;
+  background: white;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: black;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-weight: 300;
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+li {
+  list-style-type: none;
+}
+
+li img {
+  height: 30px;
+}
+
+ul {
+  padding-left: 0;
+  margin: 30px 0;
+}
+
+ul li {
+  margin-bottom: 20px;
+}
+
+footer {
+  height: 200px;
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #090979), to(#00d4ff));
+  background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*custom*/
+.border {
+  margin: 50px 0;
+  border-bottom: 5px solid blue;
+}
+
+.green {
+  padding-right: 25px;
+  vertical-align: bottom;
+}
+
+.container {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  background: url("https://source.unsplash.com/WLUHO9A_xik/");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.big {
+  font-size: 30px;
+}
+
+.con {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.con input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.con:last-child {
+  padding-bottom: 40px;
+  margin-bottom: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.con:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.con input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.con input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.con .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .picture, footer {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
