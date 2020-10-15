@@ -24,6 +24,16 @@ header {
           align-items: center;
 }
 
+li::before {
+  background: url("../images/checkmark.svg");
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 p {
   width: 100%;
   font-size: 20px;
@@ -36,7 +46,6 @@ main {
 }
 
 h1 {
-  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   color: black;
   font-size: 25px;
@@ -44,7 +53,6 @@ h1 {
 }
 
 h2 {
-  font-family: "Open Sans", sans-serif;
   text-align: left;
   font-weight: 300;
   font-size: 22px;
@@ -53,6 +61,9 @@ h2 {
 
 li {
   list-style-type: none;
+  padding-left: 50px;
+  position: relative;
+  line-height: 30px;
 }
 
 li img {
@@ -70,6 +81,9 @@ ul li {
 
 footer {
   height: 200px;
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
   background: #020024;
   background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #090979), to(#00d4ff));
   background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
@@ -114,6 +128,8 @@ footer {
           flex-direction: column;
   text-align: center;
   width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
   height: 50vh;
   overflow: hidden;
   background: url("https://source.unsplash.com/WLUHO9A_xik/");
